@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact | Mohd Belal
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="canonical" href="https://mattfarley.ca">
+  <link href="../img/favicon-32.png" rel="shortcut icon" type="image/png">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/form.css">
+  <script src="https://kit.fontawesome.com/9bdc906322.js"></script>
+  <script async="" src="https://cdn.splitbee.io/sb.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+</head>
+
+<body>
+  <nav class="navbar is-transparent is-planner animate-fadeDown">
+    <div class="container">
+      <div class="navbar-brand"><a class="navbar-item" href="/"><img src="img/mf-logo.svg"
+            alt="Matt Farley | Designer, Front-end Developer &amp; Mentor" height="48"></a></div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <p class="buttons"><a class="button is-medium tooltip is-tooltip-bottom" data-tooltip="Reset"
+                onclick="document.getElementById('form').reset();"><span class="icon is-small"><i
+                    class="fas fa-undo-alt"></i></span></a><a class="button is-medium tooltip is-tooltip-bottom"
+                data-tooltip="Close" href="/"><span class="icon is-small"><i class="fas fa-times"></i></span></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="is-form-page">
+    <section class="is-white has-text-centered">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8"><img class="avatar" src="img/mf-avatar.svg">
+            <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Thanks for taking the time
+              to reach out. How can I help you today?</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="is-white">
+      <div class="container">
+        <!-- <form accept-charset="UTF-8" action="https://usebasin.com/f/363b98eca5af" method="POST">
+            <div class="columns is-centered">
+              <div class="column is-half">
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control is-expanded">
+                    <input class="input is-large" name="name" type="text" required>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-half">
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control is-expanded">
+                    <input class="input is-large" name="email" type="email" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns is-centered">
+              <div class="column">
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control is-expanded">
+                    <textarea class="textarea is-large" name="message" rows="5" required></textarea>
+                  </div>
+                </div>
+                <div class="field is-hidden">
+                  <label class="is-hidden"></label>
+                  <div class="control is-expanded is-hidden">
+                    <input class="is-hidden" name="bot_vortex" type="hidden">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns is-centered">
+              <div class="column is-one-third">
+                <div class="field">
+                  <div class="control">
+                    <button class="button is-primary is-outlined is-medium is-fullwidth is-rounded">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form> -->
+
+        <!-- 
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+ -->
+
+        <section class="contact-section">
+          <div class="contact-intro">
+            <h2 class="contact-title">Get in Touch</h2>
+            <p class="contact-description">
+              Fill out the form below and we'll get back to you as soon as possible.
+            </p>
+          </div>
+
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="06151052-2e9b-40c8-b426-5e7d5fd0c0f1" />
+            <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+            <input type="hidden" name="from_name" value="My Website" />
+            <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+            <div class="form-group-container">
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone</label>
+                <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+              </div>
+            </div>
+            <button class="form-submit" type="submit">Send Message</button>
+          </form>
+
+        </section>
+
+      </div>
+    </section>
+  </div>
+  <script src="../js/main-min.js"></script>
+  <script src="https://usebasin.com/f/363b98eca5af/ahoy.js" async="" defer=""></script>
+</body>
+
+</html>
